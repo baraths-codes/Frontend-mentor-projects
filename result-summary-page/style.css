@@ -27,14 +27,15 @@
   background-color: white;
   display: flex;
   border-radius: 20px;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
   font-family: "customFont";
 }
 .result {
   width: 50%;
   height: 100%;
   color: white;
-  background-color: hsl(241, 81%, 54%);
+  background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
   border-radius: 20px;
   text-align: center;
   display: flex;
@@ -48,21 +49,26 @@
   opacity: 70%;
 }
 .circle {
-  width: 170px;
-  height: 170px;
+  width: 185px;
+  height: 185px;
   align-content: center;
-  background-color: linear-gradient(red, yellow);
+
+  background-image: linear-gradient(
+    hsla(256, 72%, 46%, 1),
+    hsla(241, 72%, 46%, 0)
+  );
   border-radius: 50%;
 }
 .content {
   margin-top: auto;
-  margin-bottom: 30px;
+  margin-bottom: 45px;
   font-weight: 400;
 }
 p {
-  font-size: 18px;
+  font-size: 17px;
   font-weight: 400;
   margin-top: 10px;
+  opacity: 70%;
 }
 
 .summary {
@@ -84,23 +90,71 @@ p {
 }
 .items {
   margin-top: 20px;
-  padding-left: 30px;
+  padding-left: 25px;
   height: 45px;
   border-radius: 13px;
 }
 .item1 {
+  display: flex;
+  justify-content: space-between;
   background-color: hsla(0, 100%, 67%, 8%);
   color: hsl(0, 100%, 67%);
 }
 .item2 {
+  display: flex;
+  justify-content: space-between;
   background-color: hsla(39, 100%, 56%, 8%);
   color: hsl(39, 100%, 56%);
 }
 .item3 {
+  display: flex;
+  justify-content: space-between;
   background-color: hsla(166, 100%, 37%, 8%);
   color: hsl(166, 100%, 37%);
 }
 .item4 {
+  display: flex;
+  justify-content: space-between;
   background-color: hsla(234, 85%, 45%, 8%);
   color: hsl(234, 85%, 45%);
+}
+ul h1 {
+  font-size: 60px;
+}
+.content h2 {
+  opacity: 90%;
+}
+.num {
+  opacity: 45%;
+}
+
+li img {
+  padding-top: 10px;
+  width: 20px;
+  height: 20px;
+}
+li p {
+  font-family: "customFontBold";
+  margin-right: auto;
+  padding-left: 15px;
+}
+
+.items h2 {
+  margin-top: 20px;
+}
+.score {
+  font-family: "customFontBold";
+  font-weight: 700;
+  color: hsl(224, 30%, 27%);
+}
+b {
+  font-size: 20px;
+  color: hsl(224, 30%, 27%);
+  font-family: "customFontBold";
+}
+a {
+  opacity: 60%;
+}
+.score1 {
+  margin-left: 15px;
 }
